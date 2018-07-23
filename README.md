@@ -1,30 +1,34 @@
-# NodeMCU + RFID-RC522
+# RFID-RC522 + Arduino Mega / NodeMCU
 
 Sending rfid using post request to url.
 
 #### Required:
-- NodeMCU (NodeMCUcp2102 recommended)
+- Board:
+  - NodeMCU (NodeMCU cp2102 recommended)
+  - Arduino Mega 2560
 - RFID-RC522
 - RFID card / chip
 
 #### ArduinoIDE libs:
-- SPI.h
-- MFRC522.h
-- ESP8266WiFi.h
-- WiFiClient.h
-- ESP8266HTTPClient.h
+- RFID-RC522:
+  - SPI.h
+  - MFRC522.h
+- NodeMCU:
+  - ESP8266WiFi.h
+  - WiFiClient.h
+  - ESP8266HTTPClient.h
 
 #### Connection:
-| RFID-RC522 | NodeMCU |
-| ------- | ---------- |
-| SDA(SS) | D2 | 
-| SCK | D5 |
-| MOSI | D7 |
-| MISO | D6 |
-| IRQ | - |
-| GND | GND |
-| RST | D1 |
-| 3.V3 | 3V3 |
+| RFID-RC522 | NodeMCU | Arduino Mega 2560 |
+| ---------- | ------- | ----------------- |
+| SDA(SS) | D2 | 53 |
+| SCK | D5 | 52 |
+| MOSI | D7 | 51 |
+| MISO | D6 | 50 |
+| IRQ | - | - |
+| GND | GND | GND |
+| RST | D1 | 5 |
+| 3.V3 | 3V3 | 3V3 |
 
 #### Functions:
 Send RFID using POST:
