@@ -1,6 +1,6 @@
 # RFID-RC522 + Arduino Mega / NodeMCU
 
-Sending rfid using post request to url.
+Working with rfid
 
 #### Required:
 - Board:
