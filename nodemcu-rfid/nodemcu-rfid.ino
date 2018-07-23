@@ -1,5 +1,3 @@
-#include <GDBStub.h>
-
 //=================================================
 //
 //  To program NodeMCU you must select board "NodeMCU 1.0(ESP-Module)"
